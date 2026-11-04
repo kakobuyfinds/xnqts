@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#38275b">
+<title>USFans spreadsheet: guía de selección, tallas y QC</title>
+<meta name="description" content="Aprende a leer una USFans spreadsheet: compara enlaces, tallas, fotos QC y costes de envío. Guía en español y categorías de moda para explorar en CAFANS.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="USFans spreadsheet: del hallazgo a una elección informada">
+<meta property="og:description" content="Un cuaderno práctico para comparar variantes, medidas, fotografías y costes antes de decidir. Con acceso a las categorías de CAFANS.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="USFans spreadsheet: guía de selección, tallas y QC">
+<meta name="twitter:description" content="Categorías de moda y respuestas claras sobre enlaces, medidas, QC y envío.">
+<link rel="preconnect" href="https://static.nike.com" crossorigin>
+<link rel="preload" as="image" href="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,q_auto:eco/wzitsrb4oucx9jukxsmc/AIR%2BMAX%2B90.png" fetchpriority="high">
+<!-- index.html. Añadir una URL canónica absoluta propia cuando se conozca la dirección final de publicación. -->
+<!--
+Enfoques secundarios:
+USFans finds; USFans QC; guía de tallas USFans; costes de envío USFans.
+
+Intenciones de búsqueda desarrolladas en el contenido:
+qué es una USFans spreadsheet; cómo usar una USFans spreadsheet;
+organizar enlaces de productos; comprobar la variante seleccionada;
+comparar referencias de zapatillas; elegir talla de zapatillas;
+medir el pie en centímetros; comparar tallas EU y US;
+interpretar una tabla de medidas; medir una sudadera en plano;
+comprobar el largo de una camiseta; elegir una chaqueta para llevar capas;
+medir la cintura de un pantalón; comparar el tiro de un pantalón;
+revisar el contenido de un conjunto; elegir la talla de una gorra;
+comparar materiales de un pañuelo; revisar el cierre de unos pendientes;
+diferenciar fotos de catálogo y QC; revisar fotos QC de una compra;
+pedir fotos de medidas; comprobar costuras y acabados;
+separar precio y envío; calcular el presupuesto de una compra;
+comparar peso real y volumétrico; revisar una cotización de transporte;
+guardar la fecha de consulta; reconocer un enlace que ha cambiado.
+No son datos de volumen de búsqueda ni una lista de etiquetas para posicionamiento.
+-->
+<style>
+:root {
+  --paper:#f6f2e9;
+  --white:#fffdf8;
+  --ink:#262331;
+  --muted:#625d6c;
+  --purple:#38275b;
+  --lavender:#e6def2;
+  --lime:#dce799;
+  --line:#ded8ce;
+  --radius:22px;
+  --max:1200px;
+}
+* { box-sizing:border-box; }
+html { color-scheme:light; }
+body {
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.65;
+}
+a { color:inherit; text-underline-offset:4px; }
+a:hover { text-decoration-thickness:2px; }
+button,input { font:inherit; }
+button { cursor:pointer; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline:3px solid #7756af;
+  outline-offset:5px;
+}
+img { display:block; max-width:100%; height:auto; }
+figure { margin:0; }
+h1,h2,h3,h4,p { margin:0; }
+h1,h2,h3,h4 { line-height:1.12; }
+h1 {
+  font-size:clamp(2.7rem,5.7vw,5.25rem);
+  letter-spacing:-.065em;
+  font-weight:740;
+}
+h2 {
+  font-size:clamp(1.9rem,3.8vw,3.2rem);
+  letter-spacing:-.045em;
+}
+h3 { font-size:1.4rem; letter-spacing:-.025em; }
+h4 { font-size:1.05rem; line-height:1.4; }
+p+p { margin-top:1rem; }
+ul,ol { padding-left:1.25rem; }
+li+li { margin-top:.5rem; }
+.wrap {
+  width:min(var(--max),calc(100% - 48px));
+  margin-inline:auto;
+}
+.eyebrow {
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-size:.72rem;
+  font-weight:750;
+}
+.small { font-size:.85rem; color:var(--muted); }
+.brand {
+  font-size:1.12rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+  text-decoration:none;
+}
+.brand span {
+  display:inline-grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:var(--lime);
+  color:var(--purple);
+  margin-right:8px;
+}
+.topbar { border-bottom:1px solid var(--line); }
+.header-inner {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  min-height:84px;
+}
+.header-inner nav {
+  display:flex;
+  gap:24px;
+  align-items:center;
+  font-size:.85rem;
+}
+.header-inner nav a { text-decoration:none; }
+.language {
+  padding:4px 10px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  font-size:.75rem;
+}
+.categories { padding-top:23px; padding-bottom:28px; }
+.category-title {
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:12px;
+}
+.category-grid {
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px;
+}
+.category-grid a {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:12px 14px;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:10px;
+  text-decoration:none;
+  font-size:.8rem;
+  line-height:1.35;
+  min-height:51px;
+}
+.category-grid a:hover {
+  background:var(--lavender);
+  border-color:#b9a8ce;
+}
+.category-grid span {
+  color:var(--purple);
+  font-size:1rem;
+  flex-shrink:0;
+}
+.hero {
+  display:grid;
+  grid-template-columns:1.15fr 1fr;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--purple);
+  color:white;
+}
+.hero-copy {
+  padding:clamp(25px,4vw,56px);
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+.hero-copy .eyebrow { color:var(--lime); margin-bottom:23px; }
+.hero-copy h1 span { display:block; color:var(--lime); }
+.hero-copy>p:not(.eyebrow) {
+  max-width:43ch;
+  margin-top:24px;
+  color:#e8e1f1;
+}
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  text-decoration:none;
+  background:var(--lime);
+  color:var(--purple);
+  border-radius:100px;
+  padding:13px 21px;
+  font-weight:750;
+  font-size:.9rem;
+}
+.hero-copy .button { margin-top:28px; }
+.hero-figure {
+  background:#f5f5f5;
+  color:var(--ink);
+  display:grid;
+  grid-template-rows:1fr auto;
+}
+.hero-figure img {
+  height:100%;
+  width:100%;
+  object-fit:contain;
+  max-height:570px;
+  aspect-ratio:1/1;
+}
+.hero-figure figcaption {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:15px 22px;
+  border-top:1px solid var(--line);
+  font-size:.75rem;
+}
+.answer {
+  display:grid;
+  grid-template-columns:200px 1fr;
+  gap:25px;
+  padding:28px 0;
+  border-bottom:1px solid var(--line);
+}
+.answer h2 { font-size:1rem; letter-spacing:0; line-height:1.5; }
+.answer p { max-width:82ch; }
+.section { padding-top:70px; }
+.section-head {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:end;
+  margin-bottom:28px;
+}
+.section-head .eyebrow { color:var(--purple); margin-bottom:12px; }
+.section-head>p {
+  color:var(--muted);
+  max-width:50ch;
+  justify-self:end;
+}
+.flow {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.flow>div {
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+  background:var(--white);
+}
+.number {
+  display:inline-grid;
+  place-items:center;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  font-size:.8rem;
+  background:var(--lavender);
+  color:var(--purple);
+  font-weight:750;
+  margin-bottom:20px;
+}
+.flow h3 { margin-bottom:12px; }
+.flow p { color:var(--muted); font-size:.94rem; }
+.look-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:15px;
+}
+.look-grid figure {
+  border-radius:17px;
+  overflow:hidden;
+  background:var(--white);
+  border:1px solid var(--line);
+}
+.look-grid img {
+  width:100%;
+  height:auto;
+  aspect-ratio:1/1.12;
+  object-fit:contain;
+  background:#efeeeb;
+}
+.look-grid figcaption { padding:20px; }
+.look-grid h3 { font-size:1rem; line-height:1.3; margin-bottom:10px; }
+.look-grid p { font-size:.84rem; color:var(--muted); }
+.look-grid .eyebrow {
+  font-size:.65rem;
+  margin-bottom:9px;
+  color:var(--purple);
+}
+.image-note {
+  margin-top:16px;
+  font-size:.79rem;
+  color:var(--muted);
+  max-width:100ch;
+}
+.dossier {
+  display:grid;
+  grid-template-columns:250px 1fr;
+  gap:38px;
+}
+.dossier-aside {
+  padding:25px;
+  border-top:3px solid var(--purple);
+  align-self:start;
+}
+.dossier-aside h2 { font-size:2rem; margin:12px 0 18px; }
+.dossier-aside p { color:var(--muted); font-size:.9rem; }
+.topic-list {
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--line);
+  margin-top:25px;
+}
+.topic-list li {
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  font-size:.85rem;
+  font-weight:650;
+}
+.article-stack { display:grid; gap:22px; }
+.article {
+  padding:32px;
+  border:1px solid var(--line);
+  background:var(--white);
+  border-radius:20px;
+}
+.article>.eyebrow { color:var(--purple); margin-bottom:13px; }
+.article h3 { font-size:1.65rem; margin-bottom:18px; }
+.article h4 { margin-top:25px; margin-bottom:9px; }
+.article p,.article li { font-size:.94rem; color:#514c58; }
+.article .lead { font-size:1.01rem; color:var(--ink); }
+.article-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.article-grid h4 { margin-top:21px; }
+.cost-note {
+  padding:18px;
+  background:var(--lavender);
+  border-radius:12px;
+  margin-top:22px;
+}
+.cost-note p { color:var(--purple); }
+.measurement {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-top:25px;
+  background:var(--lavender);
+  padding:24px;
+  border-radius:16px;
+}
+.measurement h4 { margin-top:0; }
+.measurement p { font-size:.9rem; }
+.outfit {
+  display:grid;
+  grid-template-columns:.75fr 1fr;
+  gap:40px;
+  background:var(--purple);
+  border-radius:var(--radius);
+  overflow:hidden;
+  color:white;
+}
+.outfit img {
+  width:100%;
+  height:100%;
+  max-height:470px;
+  object-fit:contain;
+  aspect-ratio:1/1;
+  background:#eee;
+}
+.outfit figcaption {
+  padding:35px 35px 35px 0;
+  align-self:center;
+}
+.outfit .eyebrow { color:var(--lime); margin-bottom:15px; }
+.outfit h2 { margin-bottom:18px; }
+.outfit p { color:#e7dfef; font-size:.95rem; }
+.worksheet {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  background:var(--lime);
+  border-radius:var(--radius);
+  padding:36px;
+  color:var(--purple);
+}
+.worksheet h2 { margin:13px 0 20px; }
+.worksheet p { max-width:42ch; }
+.checklist { display:grid; gap:9px; align-content:start; }
+.checklist label {
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:13px 14px;
+  background:#ffffff8c;
+  border-radius:12px;
+  font-size:.9rem;
+  cursor:pointer;
+}
+.checklist input {
+  flex-shrink:0;
+  width:19px;
+  height:19px;
+  accent-color:var(--purple);
+  margin-top:4px;
+}
+.progress { font-size:.85rem; font-weight:700; min-height:2em; }
+.reset {
+  justify-self:start;
+  border:1px solid var(--purple);
+  border-radius:20px;
+  color:var(--purple);
+  background:transparent;
+  padding:6px 15px;
+  font-size:.8rem;
+}
+.faq {
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:50px;
+}
+.faq-intro .eyebrow { color:var(--purple); margin-bottom:14px; }
+.faq-intro p:last-child { margin-top:18px; color:var(--muted); }
+details { border-bottom:1px solid var(--line); }
+summary {
+  cursor:pointer;
+  padding:19px 30px 19px 0;
+  font-weight:700;
+  line-height:1.45;
+}
+details p {
+  padding:0 0 21px;
+  color:var(--muted);
+  font-size:.94rem;
+}
+.closing {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  border-top:1px solid var(--line);
+  margin-top:70px;
+  padding:34px 0;
+}
+.closing h2 { font-size:1.8rem; }
+.closing p { color:var(--muted); margin-top:10px; }
+.closing .button {
+  white-space:nowrap;
+  background:var(--purple);
+  color:white;
+}
+.footer { border-top:1px solid var(--line); padding:28px 0 35px; }
+.footer-top {
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  font-size:.8rem;
+  color:var(--muted);
+}
+.footer-top p { max-width:85ch; }
+.research { margin-top:23px; font-size:.8rem; }
+.research summary { font-size:.82rem; }
+.research p { font-size:.82rem; }
+.table-scroll {
+  overflow-x:auto;
+  margin:0 0 22px;
+  border:1px solid var(--line);
+  border-radius:12px;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+  min-width:650px;
+  font-size:.78rem;
+  text-align:left;
+}
+caption {
+  text-align:left;
+  padding:14px;
+  font-weight:700;
+  background:var(--lavender);
+  color:var(--purple);
+}
+th,td {
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+th { background:var(--white); }
+tr:last-child td { border-bottom:0; }
+.defer {
+  content-visibility:auto;
+  contain-intrinsic-size:auto 600px;
+}
+@media(min-width:1450px) {
+  .hero-copy { padding:60px; }
+}
+@media(max-width:950px) {
+  .category-grid { grid-template-columns:repeat(3,1fr); }
+  .hero { grid-template-columns:1fr 1fr; }
+  .hero-copy { padding:28px; }
+  .look-grid { grid-template-columns:repeat(2,1fr); }
+  .dossier { grid-template-columns:1fr; }
+  .dossier-aside {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    padding:24px 0;
+  }
+  .topic-list { margin-top:0; }
+  .flow>div { padding:21px; }
+  .faq { gap:28px; }
+  .outfit { gap:25px; }
+}
+@media(max-width:650px) {
+  .wrap { width:calc(100% - 30px); }
+  .header-inner { min-height:72px; }
+  .header-inner nav { gap:14px; }
+  .header-inner nav a:nth-child(2) { display:none; }
+  .brand { font-size:.95rem; }
+  .language { display:none; }
+  .categories { padding-top:18px; padding-bottom:20px; }
+  .category-title { display:block; }
+  .category-title .small { display:block; margin-top:3px; }
+  .category-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .category-grid a {
+    padding:10px;
+    font-size:.75rem;
+    min-height:48px;
+  }
+  .hero { grid-template-columns:1fr; }
+  .hero-copy { padding:31px 26px; }
+  .hero-copy h1 { font-size:3.1rem; }
+  .hero-copy>p:not(.eyebrow) { margin-top:19px; }
+  .hero-figure img {
+    max-height:330px;
+    aspect-ratio:1.4/1;
+    object-fit:contain;
+  }
+  .hero-figure figcaption { padding:12px 16px; font-size:.68rem; }
+  .answer { grid-template-columns:1fr; gap:10px; padding:23px 0; }
+  .answer p { font-size:.93rem; }
+  .section { padding-top:47px; }
+  .section-head { grid-template-columns:1fr; gap:15px; }
+  .section-head>p { justify-self:start; }
+  .flow { grid-template-columns:1fr; }
+  .flow>div { padding:23px; }
+  .number { margin-bottom:12px; }
+  .look-grid { gap:10px; }
+  .look-grid figcaption { padding:15px; }
+  .look-grid h3 { font-size:.94rem; }
+  .look-grid p { font-size:.8rem; }
+  .dossier-aside { grid-template-columns:1fr; gap:10px; }
+  .article { padding:24px 20px; }
+  .article-grid,.measurement { grid-template-columns:1fr; gap:0; }
+  .article h3 { font-size:1.45rem; }
+  .measurement { gap:20px; padding:20px; }
+  .outfit { grid-template-columns:1fr; gap:0; }
+  .outfit img { max-height:350px; }
+  .outfit figcaption { padding:27px; }
+  .worksheet {
+    grid-template-columns:1fr;
+    padding:26px 20px;
+    gap:25px;
+  }
+  .faq { grid-template-columns:1fr; gap:20px; }
+  .closing { display:block; margin-top:47px; }
+  .closing .button { margin-top:23px; }
+  .footer-top { display:block; }
+  .footer-top>a { display:inline-block; margin-top:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { scroll-behavior:auto!important; }
+}
+@media print {
+  body { background:white; color:black; }
+  .header-inner nav,.button,.reset { display:none; }
+  .wrap { width:100%; }
+  .hero,.outfit,.worksheet {
+    background:white;
+    color:black;
+    border:1px solid #aaa;
+  }
+  .hero-copy>p:not(.eyebrow),
+  .hero-copy h1 span,
+  .hero-copy .eyebrow,
+  .outfit p,
+  .outfit .eyebrow { color:black; }
+  .defer { content-visibility:visible; }
+  .section { padding-top:25px; }
+  .article,figure { break-inside:avoid; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"#pagina",
+      "inLanguage":"es",
+      "name":"USFans spreadsheet: guía de selección, tallas y QC",
+      "description":"Aprende a leer una USFans spreadsheet: compara enlaces, tallas, fotos QC y costes de envío. Guía en español y categorías de moda para explorar en CAFANS.",
+      "datePublished":"2026-11-04",
+      "about":{
+        "@type":"Thing",
+        "name":"Uso de listas de productos y comparación de información antes de comprar"
+      },
+      "hasPart":[
+        {"@id":"#articulo-enlaces"},
+        {"@id":"#articulo-tallas"},
+        {"@id":"#articulo-costes"},
+        {"@id":"#preguntas"}
+      ]
+    },
+    {
+      "@type":"Article",
+      "@id":"#articulo-enlaces",
+      "inLanguage":"es",
+      "isPartOf":{"@id":"#pagina"},
+      "headline":"Cómo usar una USFans spreadsheet sin perder la referencia",
+      "description":"Una selección útil conserva el enlace de origen, la variante elegida y la fecha de consulta.",
+      "datePublished":"2026-11-04"
+    },
+    {
+      "@type":"Article",
+      "@id":"#articulo-tallas",
+      "inLanguage":"es",
+      "isPartOf":{"@id":"#pagina"},
+      "headline":"Guía de tallas USFans: comparar medidas que significan lo mismo",
+      "description":"La talla de la etiqueta orienta; las medidas del modelo y el método de medición permiten comparar.",
+      "datePublished":"2026-11-04"
+    },
+    {
+      "@type":"Article",
+      "@id":"#articulo-costes",
+      "inLanguage":"es",
+      "isPartOf":{"@id":"#pagina"},
+      "headline":"USFans QC y costes de envío: dos comprobaciones distintas",
+      "description":"Las fotografías responden preguntas sobre el artículo; una cotización responde preguntas sobre el paquete.",
+      "datePublished":"2026-11-04"
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"#preguntas",
+      "inLanguage":"es",
+      "isPartOf":{"@id":"#pagina"},
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"¿Qué es una USFans spreadsheet?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Es una lista organizada de enlaces de productos relacionada con la búsqueda de artículos para USFans. Puede incluir categorías, imágenes y notas. Comprueba siempre la ficha de origen y la variante antes de tomar una decisión."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"¿Esta página contiene una hoja descargable o un catálogo en directo?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. Es una guía estática en español. Las diez categorías abren las secciones indicadas de CAFANS y los demás enlaces de navegación llevan a su página principal."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"¿Una fotografía QC demuestra que un artículo es auténtico?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. Puede documentar rasgos visibles de una unidad, pero no acredita su origen, composición ni autenticidad. Además, debe comprobarse si corresponde al pedido y a la variante que se están evaluando."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"¿Cómo elijo una talla si solo aparece S, M o L?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Solicita la tabla de medidas del modelo. Compara una prenda que te quede bien usando los mismos puntos y el mismo método de medición. No deduzcas el ajuste únicamente de la letra de la etiqueta."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"¿El precio que aparece en una lista incluye el envío?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No se puede dar por incluido. Revisa qué conceptos cubre el importe y solicita una cotización para el destino, contenido y embalaje concretos. Anota por separado cualquier gasto todavía pendiente de confirmar."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"¿Esta guía representa a USFans o a las marcas de las imágenes?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. Es una guía independiente y no declara afiliación oficial con USFans, Nike, Louis Vuitton, Gucci, Hermès o Dior. Las imágenes son referencias visuales y no confirman existencias ni productos disponibles en CAFANS."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/xnqts/">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap header-inner">
+    <a class="brand" href="https://www.cafans.com" aria-label="Ir a la página principal de CAFANS"><span aria-hidden="true">C</span>www.cafans.com</a>
+    <nav aria-label="Navegación principal">
+      <a href="https://www.cafans.com">Explorar CAFANS ↗</a>
+      <a href="https://www.cafans.com">Descubrir moda ↗</a>
+      <span class="language">ES · Español</span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <nav class="wrap categories" aria-labelledby="categorias-titulo">
+    <div class="category-title">
+      <h2 class="eyebrow" id="categorias-titulo">Tu punto de partida: categorías</h2>
+      <p class="small">Acceso directo a las secciones de CAFANS</p>
+    </div>
+    <div class="category-grid">
+      <a href="https://cafans.com/category-911-Shoes.html"><span lang="en">Shoes</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html"><span lang="en">Hoodies/Sweaters</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-913-T-Shirts.html"><span lang="en">T-Shirts</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-914-Jackets.html"><span lang="en">Jackets</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-915-Pants%2FShorts.html"><span lang="en">Pants/Shorts</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-916-Headwear.html"><span lang="en">Headwear</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-917-Sets.html"><span lang="en">Sets</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-918-underwear%2Funderpants.html"><span lang="en">Underwear/underpants</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-919-Jersey.html"><span lang="en">Jersey</span><span aria-hidden="true">↗</span></a>
+      <a href="https://cafans.com/category-920-Accessories.html"><span lang="en">Accessories</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+
+  <section class="wrap hero" aria-labelledby="titulo">
+    <div class="hero-copy">
+      <p class="eyebrow">Cuaderno de selección / edición en español</p>
+      <h1 id="titulo">USFans spreadsheet<span>Mira mejor.<br>Elige con criterio.</span></h1>
+      <p>Una imagen despierta la idea. El enlace, la talla y los detalles te ayudan a decidir. Aquí tienes una guía para convertir tus hallazgos en una selección que puedas explicar.</p>
+      <a class="button" href="https://www.cafans.com">Explorar en CAFANS <span aria-hidden="true">↗</span></a>
+    </div>
+    <figure class="hero-figure">
+      <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,q_auto:eco/wzitsrb4oucx9jukxsmc/AIR%2BMAX%2B90.png" width="864" height="1080" fetchpriority="high" loading="eager" decoding="async" alt="Zapatilla Nike Air Max 90 en gris oscuro y negro, con Swoosh blanco y unidad Air visible en el talón">
+      <figcaption>
+        <span>Nike Air Max 90 / perfil y proporción</span>
+        <span>Referencia visual</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <aside class="wrap answer" aria-labelledby="respuesta-breve">
+    <h2 id="respuesta-breve">¿Para qué sirve<br>una spreadsheet?</h2>
+    <p>Una <strong>USFans spreadsheet</strong> organiza enlaces de productos para facilitar su búsqueda y comparación. Su valor está en conservar información comprobable: origen, variante y notas. Esta página explica cómo leerla y ofrece accesos a CAFANS; no presenta precios ni disponibilidad en tiempo real.</p>
+  </aside>
+
+  <section class="wrap section" aria-labelledby="metodo">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">01 / El método</p>
+        <h2 id="metodo">Tres preguntas antes<br>de guardar un hallazgo.</h2>
+      </div>
+      <p>Los USFans finds resultan más útiles cuando cada imagen viene acompañada de una respuesta concreta.</p>
+    </div>
+    <div class="flow">
+      <div>
+        <span class="number">01</span>
+        <h3>¿Qué artículo es?</h3>
+        <p>Comprueba el enlace y la referencia del modelo. Un nombre parecido o una foto recortada no identifican por sí solos la misma versión.</p>
+      </div>
+      <div>
+        <span class="number">02</span>
+        <h3>¿Qué opción eliges?</h3>
+        <p>Anota color, talla y contenido. Revisa si estás seleccionando una pieza, un conjunto completo o una variante que cambia el material.</p>
+      </div>
+      <div>
+        <span class="number">03</span>
+        <h3>¿Qué falta saber?</h3>
+        <p>Separa los datos confirmados de las preguntas pendientes: una medida, una foto del cierre o el coste del paquete para tu destino.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section defer" aria-labelledby="referencias">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">02 / Laboratorio visual</p>
+        <h2 id="referencias">Cuatro piezas.<br>Cuatro formas de mirar.</h2>
+      </div>
+      <p>El calzado, una gorra, un pañuelo y unos pendientes necesitan comprobaciones diferentes. Empieza por el detalle que cambia tu elección.</p>
+    </div>
+    <div class="look-grid">
+      <figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1781540104/857596_3HBIM_2566_001_100_0000_Light-gg-canvas-baseball-cap.jpg" width="490" height="490" loading="lazy" decoding="async" alt="Gorra Gucci de lona beige con monograma GG marrón y detalle verde y rojo junto a la visera">
+        <figcaption>
+          <p class="eyebrow">Gucci / cabeza</p>
+          <h3>Elegir la talla de una gorra</h3>
+          <p>Revisa el contorno indicado, la profundidad y el recorrido del ajuste. Una hebilla visible no dice cuánto puede ampliarse.</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.hermes.com/is/image/hermesproduct/004323S%2001_flat_wm_103?wid=480&amp;hei=480" width="480" height="480" loading="lazy" decoding="async" alt="Pañuelo Hermès cuadrado con escenas ecuestres en una composición de bloques azules, blancos y anaranjados">
+        <figcaption>
+          <p class="eyebrow">Hermès / textura</p>
+          <h3>Comparar materiales de un pañuelo</h3>
+          <p>Busca composición y dimensiones en la ficha. La iluminación y el plegado pueden cambiar cómo percibes el color y el grosor.</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/E3365WOMCYD03S_SBG_E01-2?wid=480&amp;hei=600&amp;qlt=75" width="480" height="600" loading="lazy" decoding="async" alt="Pendientes Dior Petit CD de tono dorado, con cristales en las letras y un cristal redondo colgante">
+        <figcaption>
+          <p class="eyebrow">Dior / detalle</p>
+          <h3>Revisar el cierre de unos pendientes</h3>
+          <p>Solicita una vista posterior y las dimensiones. Una foto frontal muestra el diseño, pero deja oculto el mecanismo de sujeción.</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="https://nz.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-trainer-sneaker--BL9U6PMI01_PM1_Side%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Zapatilla Louis Vuitton LV Trainer blanca vista de lado, con paneles superpuestos y suela gruesa">
+        <figcaption>
+          <p class="eyebrow">Louis Vuitton / silueta</p>
+          <h3>Comparar referencias de zapatillas</h3>
+          <p>Relaciona código, color y paneles del modelo. Dos siluetas próximas pueden corresponder a materiales o versiones diferentes.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="image-note">Imágenes de referencia procedentes de Gucci, Hermès, Dior y Louis Vuitton. Ilustran estilos y detalles; no son fotos QC de un pedido ni acreditan productos disponibles en CAFANS.</p>
+  </section>
+
+  <section class="wrap section dossier defer" aria-labelledby="dossier-titulo">
+    <aside class="dossier-aside">
+      <div>
+        <p class="eyebrow">03 / Artículos prácticos</p>
+        <h2 id="dossier-titulo">La información<br>que sí cambia<br>una decisión.</h2>
+        <p>Lee por tema y conserva tus propias comprobaciones. Cada apartado responde una pregunta distinta.</p>
+      </div>
+      <ul class="topic-list" aria-label="Temas de esta guía">
+        <li>USFans finds · enlaces y variantes</li>
+        <li>Guía de tallas USFans · medidas</li>
+        <li>USFans QC · evidencia visual</li>
+        <li>Costes de envío USFans · presupuesto</li>
+      </ul>
+    </aside>
+
+    <div class="article-stack">
+      <article class="article" id="articulo-enlaces" aria-labelledby="enlaces-titulo">
+        <p class="eyebrow">Artículo 01 / Mantener el contexto</p>
+        <h3 id="enlaces-titulo">Cómo usar una USFans spreadsheet sin perder la referencia</h3>
+        <p class="lead">Una selección útil conserva el enlace de origen, la variante elegida y la fecha de consulta.</p>
+        <div class="article-grid">
+          <div>
+            <h4>Organizar enlaces de productos</h4>
+            <p>Guarda una fila por candidato con su nombre, dirección de origen y categoría. Añade una nota que explique por qué te interesa: el corte, el tamaño o un detalle concreto. Así podrás compararlo con otro artículo sin depender del recuerdo de una foto.</p>
+            <h4>Comprobar la variante seleccionada</h4>
+            <p>Lee el texto de la opción marcada. La imagen principal puede mostrar varios colores, mientras que la selección corresponde a uno solo. Para revisar el contenido de un conjunto, enumera las piezas incluidas; no lo deduzcas de una fotografía de estilismo.</p>
+          </div>
+          <div>
+            <h4>Guardar la fecha de consulta</h4>
+            <p>Anota cuándo revisaste la ficha y qué datos viste. Eso ayuda a distinguir un precio anotado anteriormente de una información que acabas de confirmar. Evita presentar una captura antigua como prueba de disponibilidad actual.</p>
+            <h4>Reconocer un enlace que ha cambiado</h4>
+            <p>Si la dirección abre otra referencia, muestra una ficha vacía o pierde la variante, vuelve a identificar el artículo. Conserva la duda en la nota y pide una confirmación concreta antes de continuar.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="article" id="articulo-tallas" aria-labelledby="tallas-titulo">
+        <p class="eyebrow">Artículo 02 / Dar sentido a las medidas</p>
+        <h3 id="tallas-titulo">Guía de tallas USFans: comparar medidas que significan lo mismo</h3>
+        <p class="lead">La talla de la etiqueta orienta; las medidas del modelo y el método de medición permiten comparar.</p>
+
+        <h4>Elegir talla de zapatillas con una referencia clara</h4>
+        <p>Para medir el pie en centímetros, sigue el método solicitado por la tabla del modelo y comprueba ambos pies. Distingue entre longitud del pie y longitud de la plantilla. Al comparar tallas EU y US, utiliza la conversión de ese modelo y comprueba a qué sistema corresponde la columna; una equivalencia general no confirma el ajuste.</p>
+
+        <div class="measurement">
+          <div>
+            <h4>Medir una sudadera en plano</h4>
+            <p>Utiliza una prenda que te quede como deseas y compárala con los mismos puntos de la tabla. El ancho de pecho medido en plano y el contorno corporal son datos distintos. Para elegir una chaqueta para llevar capas, considera también el espacio para la prenda interior.</p>
+          </div>
+          <div>
+            <h4>Comprobar el largo de una camiseta</h4>
+            <p>Relaciona largo, hombros y ancho con la silueta que buscas. Para medir la cintura de un pantalón, confirma si se expresa en plano o como contorno, y si está relajada o estirada. Al comparar el tiro de un pantalón, usa los mismos puntos de inicio y final.</p>
+          </div>
+        </div>
+
+        <h4>Interpretar una tabla de medidas incompleta</h4>
+        <p>Si faltan unidades, método o tolerancia declarada, solicita esos datos. Pedir fotos de medidas sirve cuando se ven el artículo completo, el instrumento y sus extremos. Una cifra sin contexto puede dar una precisión que la información disponible no permite.</p>
+      </article>
+
+      <article class="article" id="articulo-costes" aria-labelledby="costes-titulo">
+        <p class="eyebrow">Artículo 03 / Comprobar antes de avanzar</p>
+        <h3 id="costes-titulo">USFans QC y costes de envío: dos comprobaciones distintas</h3>
+        <p class="lead">Las fotografías responden preguntas sobre el artículo; una cotización responde preguntas sobre el paquete.</p>
+
+        <div class="article-grid">
+          <div>
+            <h4>Diferenciar fotos de catálogo y QC</h4>
+            <p>Una imagen comercial presenta el diseño. Para revisar fotos QC de una compra, comprueba primero si documentan tu unidad, color y talla. Las imágenes públicas de otras compras pueden orientar preguntas, pero no muestran necesariamente el artículo de tu pedido.</p>
+            <h4>Comprobar costuras y acabados</h4>
+            <p>Pide imágenes nítidas del área que te preocupa: unión de paneles, bordes, cierre o estampado. Si la duda es funcional, una sola vista frontal puede no resolverla. La fotografía tampoco certifica composición, autenticidad ni duración.</p>
+          </div>
+          <div>
+            <h4>Separar precio y envío</h4>
+            <p>Para calcular el presupuesto de una compra, anota cada concepto confirmado: artículo, transporte hasta el almacén, servicios y transporte internacional cuando correspondan. Mantén visibles los gastos todavía desconocidos, en lugar de asignarles un valor inventado.</p>
+            <h4>Revisar una cotización de transporte</h4>
+            <p>Compara propuestas con el mismo destino, contenido y embalaje. Para comparar peso real y volumétrico, solicita qué peso facturable y método utiliza la ruta concreta. Una regla general por kilogramo no sustituye la cotización del paquete.</p>
+          </div>
+        </div>
+        <div class="cost-note">
+          <p><strong>Nota útil:</strong> un importe publicado en una lista es una referencia fechada. Confirma el total y las condiciones en el servicio con el que decidas tramitar la compra.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section defer" aria-label="Referencia de ropa y proporciones">
+    <figure class="outfit">
+      <img src="https://content.stylitics.com/images/items/21699244" width="585" height="660" loading="lazy" decoding="async" alt="Chaqueta Nike ACG negra de cuello alto y cremallera completa, con un pequeño logotipo triangular en el pecho">
+      <figcaption>
+        <p class="eyebrow">Nike ACG / pensar en capas</p>
+        <h2>El conjunto empieza<br>por las proporciones.</h2>
+        <p>Al combinar una chaqueta con una camiseta o una sudadera, compara las longitudes y la amplitud de ambas prendas. El volumen exterior y el espacio interior son decisiones relacionadas.</p>
+        <p>Una foto te ayuda a imaginar el resultado. Las medidas de las prendas te ayudan a comprobar si esa combinación tiene sentido para ti.</p>
+        <p class="small">Referencia visual de ropa. Imagen servida por Stylitics y enlazada desde Nike; no acredita existencias en CAFANS.</p>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="wrap section defer" aria-labelledby="lista-titulo">
+    <div class="worksheet">
+      <div>
+        <p class="eyebrow">04 / Tu nota de selección</p>
+        <h2 id="lista-titulo">¿Qué tienes<br>ya confirmado?</h2>
+        <p>Marca lo que has comprobado. Si queda una casilla pendiente, conviértela en tu próxima pregunta sobre el artículo.</p>
+        <p class="small">Las marcas se mantienen solo mientras esta página permanezca abierta. No se envían datos.</p>
+      </div>
+      <form class="checklist" id="revision" aria-label="Lista personal de comprobaciones">
+        <label><input type="checkbox" name="origen">Identifiqué el enlace y la referencia del artículo.</label>
+        <label><input type="checkbox" name="variante">Confirmé color, talla y piezas incluidas.</label>
+        <label><input type="checkbox" name="medidas">Comparé las medidas con el mismo método.</label>
+        <label><input type="checkbox" name="fotos">Sé qué muestran las fotos y qué falta por comprobar.</label>
+        <label><input type="checkbox" name="costes">Separé los costes confirmados de los pendientes.</label>
+        <output class="progress" id="estado" aria-live="polite" aria-atomic="true">Marca las comprobaciones que hayas realizado.</output>
+        <button class="reset" type="reset">Reiniciar lista</button>
+        <noscript><p class="small">Puedes marcar las casillas sin JavaScript; el contador automático requiere activarlo.</p></noscript>
+      </form>
+    </div>
+  </section>
+
+  <section class="wrap section faq defer" id="preguntas" aria-labelledby="faq-titulo">
+    <div class="faq-intro">
+      <p class="eyebrow">05 / Respuestas directas</p>
+      <h2 id="faq-titulo">Antes de<br>seguir mirando.</h2>
+      <p>Conceptos básicos para distinguir una lista de enlaces, una fotografía y una decisión de compra.</p>
+    </div>
+    <div>
+      <details open>
+        <summary>¿Qué es una USFans spreadsheet?</summary>
+        <p>Es una lista organizada de enlaces de productos relacionada con la búsqueda de artículos para USFans. Puede incluir categorías, imágenes y notas. Comprueba siempre la ficha de origen y la variante antes de tomar una decisión.</p>
+      </details>
+      <details>
+        <summary>¿Esta página contiene una hoja descargable o un catálogo en directo?</summary>
+        <p>No. Es una guía estática en español. Las diez categorías abren las secciones indicadas de CAFANS y los demás enlaces de navegación llevan a su página principal.</p>
+      </details>
+      <details>
+        <summary>¿Una fotografía QC demuestra que un artículo es auténtico?</summary>
+        <p>No. Puede documentar rasgos visibles de una unidad, pero no acredita su origen, composición ni autenticidad. Además, debe comprobarse si corresponde al pedido y a la variante que se están evaluando.</p>
+      </details>
+      <details>
+        <summary>¿Cómo elijo una talla si solo aparece S, M o L?</summary>
+        <p>Solicita la tabla de medidas del modelo. Compara una prenda que te quede bien usando los mismos puntos y el mismo método de medición. No deduzcas el ajuste únicamente de la letra de la etiqueta.</p>
+      </details>
+      <details>
+        <summary>¿El precio que aparece en una lista incluye el envío?</summary>
+        <p>No se puede dar por incluido. Revisa qué conceptos cubre el importe y solicita una cotización para el destino, contenido y embalaje concretos. Anota por separado cualquier gasto todavía pendiente de confirmar.</p>
+      </details>
+      <details>
+        <summary>¿Esta guía representa a USFans o a las marcas de las imágenes?</summary>
+        <p>No. Es una guía independiente y no declara afiliación oficial con USFans, Nike, Louis Vuitton, Gucci, Hermès o Dior. Las imágenes son referencias visuales y no confirman existencias ni productos disponibles en CAFANS.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="wrap closing" aria-labelledby="continuar-titulo">
+    <div>
+      <h2 id="continuar-titulo">Llévate una idea y una pregunta.</h2>
+      <p>Explora CAFANS con tu lista de medidas, variantes y detalles pendientes.</p>
+    </div>
+    <a class="button" href="https://www.cafans.com">Continuar en CAFANS <span aria-hidden="true">↗</span></a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <p>CAFANS · Guía editorial independiente en español. Las marcas pertenecen a sus respectivos titulares. Esta página no tramita pagos ni confirma precios, disponibilidad o plazos de entrega.</p>
+      <a href="https://www.cafans.com">www.cafans.com ↗</a>
+    </div>
+
+    <details class="research">
+      <summary>Fuentes, alcance de la investigación y criterios editoriales</summary>
+      <p>Consulta realizada el <time datetime="2026-11-04">4 de noviembre de 2026</time> para «USFans spreadsheet». El acceso directo a la página de resultados de Google no estuvo disponible. Se revisaron diez sitios encontrados mediante búsqueda web alternativa; no se han verificado como las diez primeras posiciones de Google. Los temas siguientes proceden de títulos, encabezados y contenido visible, no de datos de volumen de búsqueda ni de una extracción completa de metadatos.</p>
+      <div class="table-scroll" role="region" tabindex="0" aria-label="Diez sitios consultados y temas editoriales observados">
+        <table>
+          <caption>Mapa de temas observado en diez sitios</caption>
+          <thead>
+            <tr>
+              <th scope="col">Sitio consultado</th>
+              <th scope="col">Palabras y temas</th>
+              <th scope="col">Enfoque del contenido</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>usfans-spread-sheet.com</td>
+              <td>Spreadsheet, categorías, productos</td>
+              <td>Presentación de una lista y entradas por tipo de artículo.</td>
+            </tr>
+            <tr>
+              <td>usfansindex.com</td>
+              <td>Finds, W2C, QC</td>
+              <td>Directorio de artículos y pasos para consultar enlaces.</td>
+            </tr>
+            <tr>
+              <td>usfansspreadsheet.gg</td>
+              <td>Finds, categorías, guía de compra</td>
+              <td>Navegación visual y explicación del recorrido de selección.</td>
+            </tr>
+            <tr>
+              <td>us-fansspreadsheet.com</td>
+              <td>Filtros, variantes, precio de referencia</td>
+              <td>Lectura de fichas y distinción entre imágenes de vendedor y QC.</td>
+            </tr>
+            <tr>
+              <td>usfansbuys.com</td>
+              <td>Enlaces de productos, tallas, envío</td>
+              <td>Categorías, artículos y orientación previa a la compra.</td>
+            </tr>
+            <tr>
+              <td>usfansfindsbook.com</td>
+              <td>Catálogo, categorías, importes</td>
+              <td>Selección de artículos con notas sobre costes adicionales.</td>
+            </tr>
+            <tr>
+              <td>usfansspreadsheett.com</td>
+              <td>Fotos QC, precios fechados, guías</td>
+              <td>Separación entre catálogo, comprobación visual y presupuesto.</td>
+            </tr>
+            <tr>
+              <td>ssfinds.com</td>
+              <td>Spreadsheet, enlaces, tutorial, QC</td>
+              <td>Accesos por categoría y respuestas a preguntas de uso.</td>
+            </tr>
+            <tr>
+              <td>usfansspreadsheetsx.com</td>
+              <td>FAQ, enlaces, peso facturable</td>
+              <td>Preguntas sobre el uso de listas y la lectura de estimaciones.</td>
+            </tr>
+            <tr>
+              <td>usfansheet.com</td>
+              <td>Google Sheets, productos, imágenes</td>
+              <td>Introducción al formato de lista y exploración por categoría.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Los artículos de esta página son originales. La investigación sirvió para identificar preguntas recurrentes; no se trasladan cifras de catálogo, ofertas, valoraciones ni promesas comerciales de esos sitios. Las referencias visuales proceden de las páginas de Nike, Gucci, Hermès, Dior y Louis Vuitton indicadas por los servidores de sus imágenes. No se afirma vinculación oficial con esas entidades.</p>
+    </details>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var form=document.getElementById("revision");
+  var output=document.getElementById("estado");
+  var boxes=Array.prototype.slice.call(
+    form.querySelectorAll('input[type="checkbox"]')
+  );
+
+  function update(){
+    var count=boxes.filter(function(box){
+      return box.checked;
+    }).length;
+
+    output.textContent=
+      count+" de "+boxes.length+" comprobaciones marcadas"+
+      (count===boxes.length
+        ? ". Revisa también cualquier cambio posterior en la ficha."
+        : ". Continúa con las que siguen pendientes.");
+  }
+
+  form.addEventListener("change",update);
+  form.addEventListener("reset",function(){
+    window.setTimeout(update,0);
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>
